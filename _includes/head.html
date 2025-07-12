@@ -8,6 +8,19 @@
     name="viewport"
     content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
   >
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi0rP0DvebUDBjGWXQJWlZlPveD/myP8x1a7K57w7F5lK1p5tF7L3J9VfS8T5P9" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-XfRAEMyZLl7X0hD+QW1bH1FqL+A/5y5t5U2fF2L8G3B7J5W9F5F5W5F5" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-43gtdHMB9e6/t7f6jK5gP4Q15R5K5T3f18D19p3X5K5L3Z4F" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            renderMathInElement(document.body, {
+                delimiters: [
+                    {left: "$$", right: "$$", display: true},
+                    {left: "$", right: "$", display: false},
+                ]
+            });
+        });
+    </script>
 
   {%- capture seo_tags -%}
     {% seo title=false %}
