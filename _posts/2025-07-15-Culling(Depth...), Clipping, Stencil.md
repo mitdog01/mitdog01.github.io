@@ -2,6 +2,7 @@
 date: 2025-04-30(WED)
 tags:
   - "#CG"
+math: true
 ---
 - Culling: Z값을 이용해, 뒤에 있는 건 가려지고, 앞에 있는건 보이게 하는 기법
 - Clipping: 보여지는 영역 밖은 안그리는 기법
